@@ -1,0 +1,540 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <style>
+
+  </style>
+  <meta charset="utf-8">
+
+  <title>UNC Men's Basketall</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar-collapse navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="images/espn.png" width="15%" class="espn">
+        </a>
+        <ul class="navbar-nav" style="float-right">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#twitjump">Twitter</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#gamejump">Game Map</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#photojump">Photo Stream</a>
+              </li>
+
+            </ul>
+    </div>
+  </nav>
+
+
+<div class="row">
+<span>
+<img class="logo hidden-sm" position="relative" src="images/unc-logo.jpg">
+</span>
+
+  <h1 class="head1 hidden-sm">13</h1><h4 class="hidden-sm head2">North Carolina Tar Heels</h4><h1 class="hidden-sm head1">8-1 | 1st in ACC</h1>
+
+</div>
+
+  <div class="container">
+
+    <div class="row">
+      </br>
+<A name="twitjump">
+
+<div class="col-md-3">
+    <img class="sched" src="images/sched.jpg">
+</div>
+    <div class="col-md-6">
+<h4>Twitter Feed</h4>
+<iframe src="index.php" id="#twitter" width="100%"></iframe>
+  </div>
+  <div class="col-md-3">
+<img class="sched" src="images/standings.jpg">
+<img class="sched" src="images/tourn.jpg">
+  </div>
+</div>
+<div class="row gmaps">
+<A name="gamejump">
+<h4>Carolina 2017-2018 Season Game Map</h4>
+<div id="map"></div>
+
+</div>
+
+<div class="row flickr">
+  <A name="photojump">
+  <div class="col-md-3">
+      <img class="sched" src="images/sched2.jpg">
+  </div>
+  <div class="col-md-6">
+<h4>Photo Stream</h4>
+<div id="flikpics"></div>
+</div>
+<div class="col-md-3">
+<img class="sched" src="images/team.jpg">
+<img class="sched" src="images/tourn.jpg">
+</div>
+
+</div>
+
+    <!-- this is my container div -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  function initMap() {
+    var unc = {lat: 35.899446, lng: -79.043976};
+    var hiowa = {lat: 35.899446, lng: -79.043976};
+    var hbucknell = {lat: 35.899446, lng: -79.043976};
+    var stanford = {lat: 37.429623, lng: -122.160633};
+    var portland = {lat: 45.531565, lng: -122.666842};
+    var arkansas = {lat: 36.067832, lng: -94.173655};
+    var michigan = {lat: 45.531565, lng: -122.666842};
+    var davidson = {lat: 35.501732, lng: -80.846779};
+    var htulane = {lat: 35.899446, lng: -79.043976};
+    var hwcu = {lat: 35.899446, lng: -79.043976};
+    var tennessee = {lat: 35.951179, lng: -83.925036};
+    var hwofford = {lat: 35.899446, lng: -79.043976};
+    var ohio = {lat: 29.949035, lng: -90.082057};
+    var hwake = {lat: 35.899446, lng: -79.043976};
+    var florida = {lat: 30.437782, lng: -84.286658};
+    var virginia = {lat: 38.045947, lng: -78.506737};
+    var hboston = {lat: 35.899446, lng: -79.043976};
+    var notredame = {lat: 41.697253, lng: -86.231141};
+    var hclemson = {lat: 35.899446, lng: -79.043976};
+    var hgeorgia = {lat: 35.899446, lng: -79.043976};
+    var virginiatech = {lat: 37.229573, lng: -80.413939};
+    var hstate = {lat: 35.899446, lng: -79.043976};
+    var clemson = {lat: 34.680414, lng: -82.846424};
+    var hpitt = {lat: 35.899446, lng: -79.043976};
+    var hdook = {lat: 35.899446, lng: -79.043976};
+    var state = {lat: 35.803339, lng: -78.721795};
+    var hnotredame = {lat: 35.899446, lng: -79.043976};
+    var louisville = {lat: 38.257783, lng: -85.753832};
+    var syracuse = {lat: 43.036227, lng: -76.136316};
+    var hmiami = {lat: 35.899446, lng: -79.043976};
+    var dook = {lat: 35.997498, lng: -78.942171};
+
+
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      styles: [
+      {
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+      ]
+      },
+      {
+      "elementType": "labels.icon",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#616161"
+      }
+      ]
+      },
+      {
+      "elementType": "labels.text.stroke",
+      "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+      ]
+      },
+      {
+      "featureType": "administrative",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "administrative.land_parcel",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "administrative.land_parcel",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+      ]
+      },
+      {
+      "featureType": "administrative.neighborhood",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "poi",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+      ]
+      },
+      {
+      "featureType": "poi",
+      "elementType": "labels.text",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#757575"
+      }
+      ]
+      },
+      {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+      ]
+      },
+      {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+      ]
+      },
+      {
+      "featureType": "road",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "road",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#ffffff"
+      }
+      ]
+      },
+      {
+      "featureType": "road",
+      "elementType": "labels",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "road",
+      "elementType": "labels.icon",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#757575"
+      }
+      ]
+      },
+      {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#dadada"
+      }
+      ]
+      },
+      {
+      "featureType": "road.highway",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#616161"
+      }
+      ]
+      },
+      {
+      "featureType": "road.local",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+      ]
+      },
+      {
+      "featureType": "transit",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "transit.line",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+      ]
+      },
+      {
+      "featureType": "transit.station",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+      ]
+      },
+      {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+      {
+        "color": "#c9c9c9"
+      }
+      ]
+      },
+      {
+      "featureType": "water",
+      "elementType": "labels.text",
+      "stylers": [
+      {
+        "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+      ]
+      }
+      ],
+      center: unc
+    });
+    var marker = new google.maps.Marker({
+      position: unc,
+      map: map,
+      icon: {
+        url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+      }
+    });
+
+
+
+
+    var marker = new google.maps.Marker({
+  position: stanford,
+  map: map,
+  icon: {
+    url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+  }
+});
+var marker = new google.maps.Marker({
+position: portland,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+
+var marker = new google.maps.Marker({
+position: arkansas,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+
+});
+var marker = new google.maps.Marker({
+position: michigan,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: davidson,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: tennessee,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: ohio,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: florida,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: virginia,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: notredame,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: virginiatech,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: clemson,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: state,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: louisville,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: syracuse,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+var marker = new google.maps.Marker({
+position: dook,
+map: map,
+icon: {
+  url: 'https://s.yimg.com/lq/i/us/sp/v/mls/teams/50x50c/nc-3.gif',
+}
+});
+
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl1x1_oOSxJtcjxCl7BmTcXxpBELTpRjk&callback=initMap">
+</script>
+<script>
+
+
+</script>
+
+<!-- these are my scripts -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- <script type="text/javascript" href="scripts.js"></script> -->
+<script src="tweetLinkIt.js"></script>
+<script>
+       $('.tweet').tweetLinkify();
+</script>
+
+</body>
+</html>

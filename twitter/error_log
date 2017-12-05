@@ -1,0 +1,15 @@
+[16-Nov-2017 11:11:32 America/Chicago] PHP Parse error:  syntax error, unexpected '$assoc' (T_VARIABLE), expecting ',' or ')' in /home1/gabrige2/public_html/apps/twitter/index.php on line 37
+[16-Nov-2017 11:18:25 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home1/gabrige2/public_html/apps/twitter/index.php on line 41
+[16-Nov-2017 11:18:27 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home1/gabrige2/public_html/apps/twitter/index.php on line 41
+[16-Nov-2017 11:18:37 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home1/gabrige2/public_html/apps/twitter/index.php on line 41
+[16-Nov-2017 11:21:17 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 43
+[20-Nov-2017 19:09:12 America/Chicago] PHP Parse error:  syntax error, unexpected '$items' (T_VARIABLE), expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 64
+[20-Nov-2017 19:09:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$items' (T_VARIABLE), expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 64
+[20-Nov-2017 19:16:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/gabrige2/public_html/apps/twitter/index.php on line 21
+[20-Nov-2017 20:05:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home1/gabrige2/public_html/apps/twitter/index.php on line 52
+[03-Dec-2017 12:26:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 48
+[03-Dec-2017 12:26:17 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 48
+[03-Dec-2017 12:26:19 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 48
+[04-Dec-2017 18:17:31 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home1/gabrige2/public_html/apps/twitter/index.php on line 54
+[04-Dec-2017 18:17:46 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home1/gabrige2/public_html/apps/twitter/index.php on line 54
+[04-Dec-2017 18:17:48 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home1/gabrige2/public_html/apps/twitter/index.php on line 54
